@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
-import {
- Card, Checkbox, ImageModal, Input, Main, Select
-} from 'components';
+import { Card, Checkbox, ImageModal, Input, Main, Select } from 'components';
 import { NoResultsFound } from 'theme/GlobalStyle';
 import loadImage from 'utils/image-promise';
 import { isEmpty } from 'utils/core-util';
@@ -118,7 +116,10 @@ export default class Artworks extends Component {
 	handleReturnPress = event => {
 		const { data, title } = this.state;
 		if (event.keyCode === 13) {
-			const results =				typeof title === 'string' && !isEmpty(title) ? this.getResultsByTitle() : data;
+			const results =
+				typeof title === 'string' && !isEmpty(title)
+					? this.getResultsByTitle()
+					: data;
 
 			this.setState({
 				from: '',
@@ -140,7 +141,10 @@ export default class Artworks extends Component {
 		}
 
 		return data.filter(image => {
-			const imageTitle = image && typeof image.title === 'string' ? image.title.toLowerCase() : '';
+			const imageTitle =
+				image && typeof image.title === 'string'
+					? image.title.toLowerCase()
+					: '';
 			return imageTitle.includes(keywords);
 		});
 	};
@@ -150,7 +154,10 @@ export default class Artworks extends Component {
 
 		return category !== 'all artworks'
 			? data.filter(
-					image => image.categories.filter(categoryOption => categoryOption === category).length > 0
+					image =>
+						image.categories.filter(
+							categoryOption => categoryOption === category
+						).length > 0
 			  )
 			: data;
 	};
@@ -162,18 +169,19 @@ export default class Artworks extends Component {
 		if (isEmpty(title)) {
 			results = this.getResultsByCategory();
 		} else {
-			results = this.getResultsByTitle().filter(image => (category !== 'all artworks'
-					? image.categories.filter(categoryOption => categoryOption === category).length > 0
-					: this.getResultsByTitle())
+			results = this.getResultsByTitle().filter(image =>
+				category !== 'all artworks'
+					? image.categories.filter(
+							categoryOption => categoryOption === category
+					  ).length > 0
+					: this.getResultsByTitle()
 			);
 		}
 		return results;
 	};
 
 	getResultsByTitleAndDate = () => {
-		const {
- title, from, to, data
-} = this.state;
+		const { title, from, to, data } = this.state;
 
 		const results = !isEmpty(title) ? this.getResultsByTitle() : data;
 
@@ -181,28 +189,30 @@ export default class Artworks extends Component {
 			// from and to
 			if (from !== '' && to !== '') {
 				return (
-					(from === 'All'
-						|| image.dateCreated >= from
-						|| (image.dateUpdated && image.dateUpdated >= from))
-					&& (to === 'All'
-						|| image.dateCreated <= to
-						|| (image.dateUpdated && image.dateUpdated <= to))
+					(from === 'All' ||
+						image.dateCreated >= from ||
+						(image.dateUpdated && image.dateUpdated >= from)) &&
+					(to === 'All' ||
+						image.dateCreated <= to ||
+						(image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
 
 			// from
 			if (from !== '' && to === '') {
 				return (
-					from === 'All'
-					|| image.dateCreated >= from
-					|| (image.dateUpdated && image.dateUpdated >= from)
+					from === 'All' ||
+					image.dateCreated >= from ||
+					(image.dateUpdated && image.dateUpdated >= from)
 				);
 			}
 
 			// to
 			if (from === '' && to !== '') {
 				return (
-					to === 'All' || image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to)
+					to === 'All' ||
+					image.dateCreated <= to ||
+					(image.dateUpdated && image.dateUpdated <= to)
 				);
 			}
 
@@ -226,9 +236,13 @@ export default class Artworks extends Component {
 			return [];
 		}
 
-		const filteredResults =			category !== 'all artworks'
+		const filteredResults =
+			category !== 'all artworks'
 				? imageList.filter(
-						image => image.categories.filter(categoryOption => categoryOption === category).length > 0
+						image =>
+							image.categories.filter(
+								categoryOption => categoryOption === category
+							).length > 0
 				  )
 				: imageList;
 
@@ -248,7 +262,9 @@ export default class Artworks extends Component {
 	filterResultsByDateRange = () => {
 		const { from, to, data } = this.state;
 
-		const imageList = !isEmpty(this.getResultsByTitle()) ? this.getResultsByTitle() : data;
+		const imageList = !isEmpty(this.getResultsByTitle())
+			? this.getResultsByTitle()
+			: data;
 
 		if (isEmpty(imageList)) {
 			return [];
@@ -258,28 +274,30 @@ export default class Artworks extends Component {
 			// from and to
 			if (from !== '' && to !== '') {
 				return (
-					(from === 'All'
-						|| image.dateCreated >= from
-						|| (image.dateUpdated && image.dateUpdated >= from))
-					&& (to === 'All'
-						|| image.dateCreated <= to
-						|| (image.dateUpdated && image.dateUpdated <= to))
+					(from === 'All' ||
+						image.dateCreated >= from ||
+						(image.dateUpdated && image.dateUpdated >= from)) &&
+					(to === 'All' ||
+						image.dateCreated <= to ||
+						(image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
 
 			// from
 			if (from !== '' && to === '') {
 				return (
-					from === 'All'
-					|| image.dateCreated >= from
-					|| (image.dateUpdated && image.dateUpdated >= from)
+					from === 'All' ||
+					image.dateCreated >= from ||
+					(image.dateUpdated && image.dateUpdated >= from)
 				);
 			}
 
 			// to
 			if (from === '' && to !== '') {
 				return (
-					to === 'All' || image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to)
+					to === 'All' ||
+					image.dateCreated <= to ||
+					(image.dateUpdated && image.dateUpdated <= to)
 				);
 			}
 
@@ -297,19 +315,23 @@ export default class Artworks extends Component {
 	getCategoryOptions = () => {
 		const { results, data } = this.state;
 		const imageList = !isEmpty(results) ? results : data;
-		const allCategories = [].concat.apply([], imageList.map(image => image.categories)); // .flat() not supported in
-
+		const allCategories = [].concat.apply(
+			[],
+			imageList.map(image => image.categories)
+		); // .flat() not supported in
 
 		const filteredCategories = allCategories
 			.filter(
-				(value, index, self) => self.indexOf(value) === index && value !== null && value !== undefined
+				(value, index, self) =>
+					self.indexOf(value) === index && value !== null && value !== undefined
 			)
 			.sort((a, b) => a - b);
 
 		return ['all artworks', ...filteredCategories]; // prepend 'all artworks' to list
 	};
 
-	getImageSrc = image => (image && image.src ? constants.IMAGE_PATH_350 + image.src : '');
+	getImageSrc = image =>
+		image && image.src ? constants.IMAGE_PATH_350 + image.src : '';
 
 	getYearLabel = image => {
 		let yearLabel = '';
@@ -341,7 +363,8 @@ export default class Artworks extends Component {
 
 		const allYears = [...createdYears, ...updatedYears]
 			.filter(
-				(value, index, self) => self.indexOf(value) === index && value !== null && value !== undefined
+				(value, index, self) =>
+					self.indexOf(value) === index && value !== null && value !== undefined
 			)
 			.sort((a, b) => a - b);
 
@@ -389,11 +412,11 @@ export default class Artworks extends Component {
 	};
 
 	render() {
-		const {
- from, to, category, title, available, results
-} = this.state;
+		const { from, to, category, title, available, results } = this.state;
 
-		const displayedResults = available ? results.filter(image => image.sold !== true) : results;
+		const displayedResults = available
+			? results.filter(image => image.sold !== true)
+			: results;
 
 		return (
 			<Main heading="Artworks">
@@ -432,9 +455,16 @@ export default class Artworks extends Component {
 					</InputWrapper>
 					<CheckboxWrapper className="form-group col-12 col-sm-6 col-md-4 col-lg-3">
 						<div>
-							<Checkbox onChange={this.handleAvailableChange('available')} value={available} />
+							<Checkbox
+								onChange={this.handleAvailableChange('available')}
+								value={available}
+							/>
 							<label className="form-check-label">Available</label>
-							<button type="button" className="btn btn-link" onClick={this.handleReset}>
+							<button
+								type="button"
+								className="btn btn-link"
+								onClick={this.handleReset}
+							>
 								reset
 							</button>
 						</div>
@@ -445,7 +475,10 @@ export default class Artworks extends Component {
 					{!isEmpty(displayedResults) ? (
 						displayedResults.map((image, index) => (
 							<div className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
-								<a href={image.src} onClick={e => this.openImageModal(image, index, e)}>
+								<a
+									href={image.src}
+									onClick={e => this.openImageModal(image, index, e)}
+								>
 									<Card
 										src={this.getImageSrc(image)}
 										title={this.getTitleLabel(image)}
