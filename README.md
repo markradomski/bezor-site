@@ -1,4 +1,2 @@
-### [Annette Bezor artist site]
-# [Portfolio](http://staging.tsurupin.com)
+## [Annette Bezor](http://www.bezor.com.au)
 
-http://www.bezor.com.au
