@@ -13,11 +13,10 @@ const CardContainer = styled.div`
 	margin-bottom: 10px;
 `;
 
-const Image = styled.img`
-	width: 100%;
-	vertical-align: middle;
+const ImageContainer = styled.div`
+	position: relative;
 	background-color: #eeeef1;
-	height: auto;
+
 	::before {
 		content: '';
 		display: block;
@@ -25,6 +24,17 @@ const Image = styled.img`
 		height: 0;
 		padding-bottom: 100%;
 	}
+`;
+
+const Image = styled.img`
+	width: 100%;
+	vertical-align: middle;
+	height: auto;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 `;
 
 const DetailsWrapper = styled.div`
@@ -47,7 +57,9 @@ const Year = styled.div`
 
 const Card = ({ src, title, year }) => (
 	<CardContainer>
-		<Image src={src} />
+		<ImageContainer>
+			<Image src={src} />
+		</ImageContainer>
 		<DetailsWrapper>
 			<Title>{title}</Title>
 			<Year>{year}</Year>
