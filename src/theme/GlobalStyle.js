@@ -2,19 +2,20 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
 
- *, *:before, *:after {
-    box-sizing: border-box;
-  }
-
-	html {
+html {
+	box-sizing: border-box;
 		height:100%; 
 		color: #000;
-	}
+} 
+*, *:before, *:after {
+	 box-sizing: inherit
+}
+
 
   body {
 		 min-height:100%; 
-		 padding:0; margin:0;
-		 position:relative;
+		 padding:0; 
+		 margin:0;
 		font-family: 'Roboto', sans-serif;
 		font-size: 16px;
 		font-weight: 400;

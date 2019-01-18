@@ -16,6 +16,15 @@ const CardContainer = styled.div`
 const Image = styled.img`
 	width: 100%;
 	vertical-align: middle;
+	background-color: #eeeef1;
+	height: auto;
+	::before {
+		content: '';
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+	}
 `;
 
 const DetailsWrapper = styled.div`
