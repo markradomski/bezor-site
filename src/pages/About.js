@@ -14,6 +14,9 @@ const BodyCopy = styled.div`
 	> p {
 		margin-bottom: 1rem;
 	}
+	.bold {
+		font-weight: 500;
+	}
 `;
 
 const FigCaption = styled.figcaption`
@@ -22,6 +25,8 @@ const FigCaption = styled.figcaption`
 	line-height: normal;
 	margin-top: 1rem;
 	margin-bottom: 1rem;
+	font-weight: 300;
+	font-size: 14px;
 `;
 
 const About = () => (
@@ -302,7 +307,7 @@ const About = () => (
 					participated in the debate over art history. Bezor has made a significant impact on the
 					idea and nature of painting in contemporary art.
 				</p>
-				<p>Chris Reid, July 2011</p>
+				<p className="bold">Chris Reid, July 2011</p>
 			</BodyCopy>
 			<SectionHeading>
 				<Title>Bibliography</Title>

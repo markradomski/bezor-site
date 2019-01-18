@@ -32,7 +32,7 @@ const CheckboxWrapper = styled.div`
 	}
 `;
 
-const CardStyles = styled.a``;
+const CardStyles = styled.div``;
 
 export default class Artworks extends Component {
 	state = {
@@ -313,7 +313,7 @@ export default class Artworks extends Component {
 	getImageSrc = image => (image && image.src ? constants.IMAGE_PATH_350 + image.src : '');
 
 	// test
-	__getImageSrc = image => (image && image.src ? 'http://www.bezor.com.au/' + constants.IMAGE_PATH_350 + image.src : '');
+	__getImageSrc = image => (image && image.src ? `http://www.bezor.com.au/${constants.IMAGE_PATH_350}${image.src}` : '');
 
 	getYearLabel = image => {
 		let yearLabel = '';
@@ -446,31 +446,17 @@ export default class Artworks extends Component {
 				</div>
 
 				<div className="row">
-					{/* 					<CardStyles
-						className="col-12 col-sm-6 col-md-4 col-lg-3"
-
-					>
-						<Card
-							src={setTimeout(() => {
-								this.getImageSrc({src:'/assets/img/w350/face-value_7-2011_lg.jpg'})
-							}, 2000) }
-							title="Testing"
-							year="2018"
-						/>
-					</CardStyles> */}
 					{!isEmpty(displayedResults) ? (
 						displayedResults.map((image, index) => (
-							<CardStyles
-								className="col-12 col-sm-6 col-md-4 col-lg-3"
-								key={index}
-								href={image.src}
-								onClick={e => this.openImageModal(image, index, e)}
-							>
+							<CardStyles className="col-12 col-sm-6 col-md-4 col-lg-3" key={index}>
+								<a href={image.src} onClick={e => this.openImageModal(image, index, e)} >
 								<Card
 									src={this.getImageSrc(image)}
 									title={this.getTitleLabel(image)}
 									year={this.getYearLabel(image)}
+									sold={image.sold}
 								/>
+								</a>
 							</CardStyles>
 						))
 					) : (

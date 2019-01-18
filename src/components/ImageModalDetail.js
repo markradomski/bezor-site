@@ -9,10 +9,11 @@ const DetailContainer = styled.div`
 	width: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
-	padding-top: 3rem;
+	padding-top: 2rem;
 	padding-left: 15px;
 	padding-right: 15px;
 	padding-bottom: 1rem;
+	font-weight: 300;
 `;
 
 const Title = styled.div`

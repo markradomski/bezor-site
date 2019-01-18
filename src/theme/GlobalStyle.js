@@ -13,18 +13,20 @@ html {
 
 
   body {
-		 min-height:100%; 
-		 padding:0; 
-		 margin:0;
 		font-family: 'Roboto', sans-serif;
 		font-size: 16px;
 		font-weight: 400;
+		letter-spacing: 0.05em;
+		line-height: 1.75;
 		background: #fafafa;
+		 min-height:100%; 
+		 padding:0; 
+		 margin:0;
 	}
 
 	h1, h2, h3, h4, h5, h6 {
 		font-family: 'Zilla Slab', serif;
-		font-weight: 300;
+		font-weight: 400;
 	}
 
 	p {
