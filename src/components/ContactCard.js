@@ -5,6 +5,7 @@ const ContactContainer = styled.div`
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 3rem;
+	font-weight: 300;
 `;
 
 const Title = styled.h5`
@@ -33,9 +34,7 @@ const Name = styled.p`
 const Email = styled.a.attrs({
 	target: '_blank',
 	rel: 'noopener'
-})`
-	font-weight: 400;
-`;
+})``;
 
 const StyledLink = styled.a.attrs({
 	target: '_blank',

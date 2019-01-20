@@ -5,18 +5,27 @@ import styled from 'styled-components';
 const InputContainer = styled.input`
 	width: 100%;
 	height: calc(2.25rem + 2px);
-	padding: 0.375rem 0.5rem;
+	padding: 0.375rem 0rem;
 	background-color: #0000;
-	border: 1px solid #ced4da;
-	border-radius: 0.2rem;
+	/* border: 1px solid #ced4da; */
+	border-radius: 0rem;
+	border: 0;
+	outline: 0;
+	background: transparent;
+	border-bottom: 1px solid #000;
+	color: #a1a1a1;
+	font-weight: 300;
 	&::placeholder {
-		color: #000;
+		color: #a1a1a1;
+		font-weight: 300;
 	}
 	&::-webkit-input-placeholder {
-		color: #000;
+		color: #a1a1a1;
+		font-weight: 300;
 	}
 	&::-moz-placeholder {
-		color: #000;
+		color: #a1a1a1;
+		font-weight: 300;
 	}
 	&:focus::-webkit-input-placeholder {
 		color: transparent;

@@ -8,6 +8,7 @@ const MainContainer = styled.div`
 
 const MainHeading = styled.h3`
 	margin-bottom: 2rem;
+	width: fit-content;
 `;
 
 const Main = props => (

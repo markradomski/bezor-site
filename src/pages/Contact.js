@@ -1,11 +1,9 @@
 import React from 'react';
 import Main from 'components/Main';
-import config from 'data/siteConfig';
+import { galleries } from 'data/siteConfig';
 import ContactCard from 'components/ContactCard';
 
-const Contact = () => {
-	const galleries = config.galleries;
-	return (
+const Contact = () => (
 		<Main heading="Galleries">
 			<div className="row">
 				{galleries
@@ -17,6 +15,5 @@ const Contact = () => {
 			</div>
 		</Main>
 	);
-};
 
 export default Contact;

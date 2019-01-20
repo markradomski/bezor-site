@@ -3,13 +3,11 @@ import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { isEmpty } from 'utils/core-util';
 
-const SelectStyles = styled.select`
+const SelectContainer = styled.select`
 	width: 100%;
 	height: calc(2.25rem + 2px);
 	/* padding: 0.375rem 0.75rem; */
 	background-color: #0000;
-	color: #a1a1a1;
-	font-weight: 300;
 	border: 1px solid #0000;
 	-webkit-appearance: none;
 	border-radius: 0px;
@@ -22,21 +20,27 @@ const SelectStyles = styled.select`
 	}
 `;
 
-const Select = ({ options, onChange, value }) => (
-	<SelectStyles value={value} onChange={onChange}>
+const Select = ({
+ options, onChange, value, placeholder
+}) => (
+	<SelectContainer value={value} onChange={onChange}>
+		<option value={value !== '' ? value : placeholder} hidden>
+			{value !== '' ? value : placeholder}
+		</option>
 		{!isEmpty(options)
 			&& options.map(option => (
-				<option value={option.value} key={option.value}>
-					{option.label}
+				<option value={option} key={option}>
+					{option}
 				</option>
 			))}
-	</SelectStyles>
+	</SelectContainer>
 );
 
 Select.propTypes = {
 	options: PropTypes.array.isRequired,
 	onChange: PropTypes.func.isRequired,
-	value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]) // selected/initial value
+	value: PropTypes.oneOfType([PropTypes.string, PropTypes.number]), // selected/initial value
+	placeholder: PropTypes.string
 };
 
 export default Select;

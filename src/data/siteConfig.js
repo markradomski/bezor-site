@@ -45,7 +45,24 @@ module.exports = {
 			email: 'mrad@email.com'
 		}
 	],
-	categories: ['all artworks', 'paintings', 'prints', 'drawings', 'series', 'sculptures'],
+	categoryOptions: [
+		{ value: 0, label: 'All Artworks' },
+		{ value: 1, label: 'Recent Work' },
+		{ value: 2, label: '1998 - 2007' },
+		{ value: 3, label: '1988 - 1997' },
+		{ value: 4, label: '1977 - 1987' },
+		{ value: 5, label: 'Prints' }
+	],
+	categoryDefault: 1,
+	categories: [
+		'all artworks',
+		'paintings',
+		'prints',
+		'drawings',
+		'series',
+		'sculptures'
+	],
+	oldestDateCreated: 1977,
 	defaultArtworks: [
 		{
 			src: 'fleshpot-2017_lg.jpg',

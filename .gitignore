@@ -12,6 +12,9 @@
 # production
 /build
 
+# deprecated
+/__old
+
 # misc
 .DS_Store
 .env.local
