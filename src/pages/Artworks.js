@@ -42,6 +42,7 @@ const ResetButton = styled.button`
 	padding: 0;
 	text-decoration: none !important;
 	line-height: unset;
+	letter-spacing: 0.05em;
 `;
 
 const CardStyles = styled.div``;

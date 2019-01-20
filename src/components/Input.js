@@ -15,6 +15,7 @@ const InputContainer = styled.input`
 	border-bottom: 1px solid #000;
 	color: #a1a1a1;
 	font-weight: 300;
+	letter-spacing: 0.05em;
 	&::placeholder {
 		color: #a1a1a1;
 		font-weight: 300;
