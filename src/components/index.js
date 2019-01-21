@@ -11,6 +11,7 @@ import Input from './Input';
 import Checkbox from './Checkbox';
 import ImageModalDetail from './ImageModalDetail';
 import ImageModal from './ImageModal';
+import HeroCarousel from './HeroCarousel';
 
 export {
 	Card,
@@ -18,6 +19,7 @@ export {
 	ContactCard,
 	Footer,
 	Header,
+	HeroCarousel,
 	ImageModal,
 	ImageModalDetail,
 	Input,
