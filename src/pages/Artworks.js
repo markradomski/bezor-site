@@ -28,10 +28,10 @@ const CheckboxWrapper = styled.div`
 	> div {
 		display: flex;
 		align-items: center;
-		margin-top: 0.8rem;
+		margin-top: -0.3rem;
 		> label {
 			font-weight: 400;
-			/* margin-left: 0.5rem; */
+			margin-left: 0.5rem;
 			margin-right: 0.5rem;
 		}
 	}
@@ -332,7 +332,7 @@ export default class Artworks extends Component {
 						/>
 					</InputWrapper>
 					<InputWrapper className="form-group col-12 col-sm-6 col-md-4 col-lg-3">
-						<label htmlFor="">Search</label>
+						<label htmlFor="">Title / description</label>
 						<Input
 							onChange={this.handleChange('title')}
 							onKeyDown={this.handleReturnPress}
@@ -340,16 +340,22 @@ export default class Artworks extends Component {
 							placeholder="Title"
 						/>
 					</InputWrapper>
-					<CheckboxWrapper className="form-group col-6 col-sm-3 col-md-2 col-lg-1">
-						<label className="form-check-label">Available</label>
-						<Checkbox
-							onChange={this.handleAvailableChange('available')}
-							value={available}
-						/>
+					<CheckboxWrapper className="form-group col-12 col-sm-6 col-md-4 col-lg-3">
+						<div>
+							<Checkbox
+								onChange={this.handleAvailableChange('available')}
+								value={available}
+							/>
+							<label className="form-check-label">Available</label>
+							<ResetButton
+								type="button"
+								className="btn btn-link"
+								onClick={this.handleReset}
+							>
+								reset
+							</ResetButton>
+						</div>
 					</CheckboxWrapper>
-					<InputWrapper className="form-group col-6 col-sm-3 col-md-2 col-lg-1">
-						{this.getResetButton()}
-					</InputWrapper>
 				</div>
 				<div className="row">
 					{!isEmpty(displayedResults) ? (
