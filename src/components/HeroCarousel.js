@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
+import { slideshow } from 'data/siteConfig';
+import { isEmpty } from 'utils/core-util';
 
 const slideshowPath = `${process.env.PUBLIC_URL}/assets/img/slideshow/`;
 
@@ -15,19 +17,6 @@ const CarouselStyles = styled.div`
 `;
 
 class HeroCarousel extends Component {
-	getSlideShowImages = () => {
-		const items = [];
-		for (let i = 1; i < 13; i++) {
-			const src = `${slideshowPath + i}.jpg`;
-			items.push(
-				<div key={i}>
-					<img src={src} />
-				</div>
-			);
-		}
-		return items;
-	};
-
 	render() {
 		return (
 			<CarouselStyles>
@@ -37,7 +26,12 @@ class HeroCarousel extends Component {
 					infiniteLoop={true}
 					autoPlay={true}
 				>
-					{this.getSlideShowImages()}
+					{!isEmpty(slideshow)
+						&& slideshow.map((image, i) => (
+							<div key={i}>
+								<img src={slideshowPath + image} />
+							</div>
+						))}
 				</Carousel>
 			</CarouselStyles>
 		);
