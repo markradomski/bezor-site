@@ -107,7 +107,14 @@ class Modal extends Component {
 
 const ImageModal = ({
  onClose, currentImage, isOpen, image
-}) => isOpen && <Modal onClose={onClose} currentImage={currentImage} isOpen={isOpen} image={image} />;
+}) => isOpen && (
+		<Modal
+			onClose={onClose}
+			currentImage={currentImage}
+			isOpen={isOpen}
+			image={image}
+		/>
+	);
 
 ImageModal.propTypes = {
 	onClose: PropTypes.func.isRequired,
