@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import { ProgressiveImage } from 'components';
 
 const CardContainer = styled.div`
 	display: flex;
@@ -8,10 +9,24 @@ const CardContainer = styled.div`
 	position: relative;
 	word-wrap: break-word;
 	min-width: 0;
-	/* background-color: #fff; */
 	background-clip: border-box;
-	/* border: 1px solid #00000020; */
 	margin-bottom: 10px;
+`;
+
+const ImageStyles = styled.div`
+	position: relative;
+	background-color: #eeeef1;
+	display: block;
+	overflow: hidden;
+	padding-bottom: 100%;
+	img {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
 `;
 
 const Overlay = styled.div`
@@ -34,27 +49,9 @@ const Overlay = styled.div`
 	}
 	.sold {
 		color: #fff;
-  font-size: 20px;
-  letter-spacing: 0.2em;
-}
+		font-size: 20px;
+		letter-spacing: 0.2em;
 	}
-`;
-
-const ImageContainer = styled.div`
-	position: relative;
-	background-color: #eeeef1;
-	display: block;
-	overflow: hidden;
-	padding-bottom: 100%;
-`;
-
-const Image = styled.img`
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	object-fit: cover;
 `;
 
 const DetailsWrapper = styled.div`
@@ -75,13 +72,13 @@ const Year = styled.div`
 `;
 
 const Card = ({
- src, title, year, sold
+ src, preview, title, year, sold
 }) => (
 	<CardContainer>
-		<ImageContainer>
-			<Image src={src} />
+		<ImageStyles>
+			<ProgressiveImage image={src} preview={preview} />
 			<Overlay>{sold && <div className="sold">SOLD</div>}</Overlay>
-		</ImageContainer>
+		</ImageStyles>
 		<DetailsWrapper>
 			<Title>{title}</Title>
 			<Year>{year}</Year>
@@ -91,7 +88,10 @@ const Card = ({
 
 Card.propTypes = {
 	src: PropTypes.string.isRequired,
-	title: PropTypes.string.isRequired
+	preview: PropTypes.string.isRequired,
+	title: PropTypes.string,
+	year: PropTypes.string,
+	sold: PropTypes.string
 };
 
 export default Card;

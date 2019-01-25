@@ -6,6 +6,8 @@ html {
 	box-sizing: border-box;
 		height:100%; 
 		color: #000;
+			overflow-y: scroll;
+
 } 
 *, *:before, *:after {
 	 box-sizing: inherit

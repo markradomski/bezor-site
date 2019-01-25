@@ -12,6 +12,7 @@ import Checkbox from './Checkbox';
 import ImageModalDetail from './ImageModalDetail';
 import ImageModal from './ImageModal';
 import HeroCarousel from './HeroCarousel';
+import ProgressiveImage from './ProgressiveImage';
 
 export {
 	Card,
@@ -25,6 +26,7 @@ export {
 	Input,
 	Main,
 	Menu,
+	ProgressiveImage,
 	ScrollToTop,
 	Select,
 	Svg

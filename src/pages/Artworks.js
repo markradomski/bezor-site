@@ -156,6 +156,8 @@ export default class Artworks extends Component {
 
 	getImageSrc = image => (image && image.src ? constants.IMAGE_PATH_350 + image.src : '');
 
+	getImagePreviewSrc = image => (image && image.src ? constants.IMAGE_PATH_60 + image.src : '');
+
 	// test
 	__getImageSrc = image => (image && image.src
 			? `http://www.bezor.com.au/${constants.IMAGE_PATH_350}${image.src}`
@@ -369,6 +371,7 @@ export default class Artworks extends Component {
 									onClick={e => this.openImageModal(image, index, e)}
 								>
 									<Card
+										preview={this.getImagePreviewSrc(image)}
 										src={this.getImageSrc(image)}
 										title={this.getTitleLabel(image)}
 										year={this.getYearLabel(image)}
