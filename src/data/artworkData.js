@@ -1040,7 +1040,7 @@ module.exports = {
 			keywords: [],
 			categories: ['paintings']
 		},
-		{
+/* 		{
 			src: 'tension_4-essential-mona-1999_lg.jpg',
 			title: 'Tension 4 (Essential Mona)',
 			dateCreated: 1999,
@@ -1052,7 +1052,7 @@ module.exports = {
 			collection: null,
 			keywords: [],
 			categories: ['paintings']
-		},
+		}, */
 		{
 			src: 'romance-air-1998_lg.jpg',
 			title: 'Romance is the Air',
