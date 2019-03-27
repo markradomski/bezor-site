@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import Main from 'components/Main';
 import HeroCarousel from 'components/HeroCarousel';
 
-const slideshowPath = `${process.env.PUBLIC_URL}/assets/img/slideshow/`;
-
 /* const ImageContainer = styled.div`
 	position: fixed;
 	left: 0;

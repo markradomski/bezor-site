@@ -78,6 +78,10 @@ class Modal extends Component {
  title, dimensions, medium, sold
 } = image;
 
+		if (!image) {
+			return null;
+		}
+
 		return (
 			isOpen && (
 				<ImageModalContainer>
@@ -107,14 +111,21 @@ class Modal extends Component {
 
 const ImageModal = ({
  onClose, currentImage, isOpen, image
-}) => isOpen && (
-		<Modal
-			onClose={onClose}
-			currentImage={currentImage}
-			isOpen={isOpen}
-			image={image}
-		/>
-	);
+}) => {
+	console.log('ImageModal', onClose, currentImage, isOpen);
+
+	if (isOpen && image) {
+		return (
+			<Modal
+				onClose={onClose}
+				currentImage={currentImage}
+				isOpen={isOpen}
+				image={image}
+			/>
+		);
+	}
+	return null;
+};
 
 ImageModal.propTypes = {
 	onClose: PropTypes.func.isRequired,

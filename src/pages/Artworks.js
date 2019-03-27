@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import {
- Card, Checkbox, ImageModal, Input, Main, Select
+ Card, Checkbox, Input, Main, Select
 } from 'components';
 import { NoResultsFound } from 'theme/GlobalStyle';
 import loadImage from 'utils/image-promise';
@@ -14,6 +14,7 @@ import {
 	categoryDefault,
 	oldestDateCreated
 } from 'data/siteConfig';
+import { Link } from 'react-router-dom';
 
 const InputWrapper = styled.div`
 	display: flex;
@@ -156,6 +157,8 @@ export default class Artworks extends Component {
 
 	getImageSrc = image => (image && image.src ? constants.IMAGE_PATH_350 + image.src : '');
 
+	getImageFilename = image => (image && image.src ? image.src : '');
+
 	getImagePreviewSrc = image => (image && image.src ? constants.IMAGE_PATH_60 + image.src : '');
 
 	// test
@@ -167,16 +170,16 @@ export default class Artworks extends Component {
 		let yearLabel = '';
 
 		if (image && image.dateCreated && image.dateUpdated) {
-			yearLabel = `${image.dateCreated} - ${image.dateUpdated}`;
+			yearLabel += `${image.dateCreated} - ${image.dateUpdated}`;
 		}
 		if (image && image.dateCreated && !image.dateUpdated) {
-			yearLabel = image.dateCreated;
+			yearLabel += image.dateCreated;
 		}
 
 		return yearLabel;
 	};
 
-	getTitleLabel = image => (image && image.title ? image.title : '');
+getTitleLabel = image => (image && image.title ? image.title : '');
 
 	isCategory = (image, category) => (image.categories
 			? image.categories.filter(categoryOption => categoryOption === category)
@@ -366,10 +369,10 @@ export default class Artworks extends Component {
 								className="col-12 col-sm-6 col-md-4 col-lg-3"
 								key={image.src + image.medium}
 							>
-								<a
-									href={image.src}
-									onClick={e => this.openImageModal(image, index, e)}
-								>
+								<Link to={{
+										pathname: '/gallery',
+										state: image
+									}}>
 									<Card
 										preview={this.getImagePreviewSrc(image)}
 										src={this.getImageSrc(image)}
@@ -377,19 +380,13 @@ export default class Artworks extends Component {
 										year={this.getYearLabel(image)}
 										sold={image.sold}
 									/>
-								</a>
+								</Link>
 							</CardStyles>
 						))
 					) : (
 						<NoResultsFound>No images found</NoResultsFound>
 					)}
 				</div>
-				<ImageModal
-					currentImage={this.state.currentImage}
-					onClose={this.closeImageModal}
-					isOpen={this.state.modalIsOpen}
-					image={this.state.image}
-				/>
 			</Main>
 		);
 	}

@@ -91,7 +91,7 @@ Card.propTypes = {
 	preview: PropTypes.string.isRequired,
 	title: PropTypes.string,
 	year: PropTypes.string,
-	sold: PropTypes.string
+	sold: PropTypes.bool
 };
 
 export default Card;
