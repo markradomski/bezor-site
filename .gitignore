@@ -14,6 +14,7 @@
 
 # deprecated
 /__old
+/build-old
 
 # misc
 .DS_Store
