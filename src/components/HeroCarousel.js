@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+import styles from 'react-responsive-carousel/lib/styles/carousel.min.css';
 import { Carousel } from 'react-responsive-carousel';
 import { slideshow } from 'data/siteConfig';
 import { isEmpty } from 'utils/core-util';
@@ -28,7 +29,7 @@ class HeroCarousel extends Component {
 					{!isEmpty(slideshow)
 						&& slideshow.map((image, i) => (
 							<div key={i}>
-								<img alt={image.title} src={slideshowPath + image} />
+								<img src={slideshowPath + image} />
 							</div>
 						))}
 				</Carousel>
