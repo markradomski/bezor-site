@@ -520,7 +520,7 @@ module.exports = {
 			keywords: [],
 			categories: ['paintings']
 		},
-		{
+		/* 		{
 			src: 'lifetimes-in-disguise-2015_lg.jpg',
 			title: 'Lifetimes in disguise',
 			dateCreated: 2015,
@@ -532,7 +532,7 @@ module.exports = {
 			collection: null,
 			keywords: [],
 			categories: ['paintings']
-		},
+		}, */
 		{
 			src: 'watching-you-1998_lg.jpg',
 			title: 'Watching you, seeing me',
@@ -1040,7 +1040,7 @@ module.exports = {
 			keywords: [],
 			categories: ['paintings']
 		},
-/* 		{
+		/* 		{
 			src: 'tension_4-essential-mona-1999_lg.jpg',
 			title: 'Tension 4 (Essential Mona)',
 			dateCreated: 1999,

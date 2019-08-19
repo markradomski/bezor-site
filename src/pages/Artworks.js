@@ -9,12 +9,8 @@ import { isEmpty } from 'utils/core-util';
 import { currentYear } from 'utils/date-util';
 import { images } from 'data/artworkData';
 import * as constants from 'data/constants';
-import {
-	categoryOptions,
-	categoryDefault,
-	oldestDateCreated
-} from 'data/siteConfig';
-import { Link } from 'react-router-dom';
+import { categoryOptions, categoryDefault, oldestDateCreated } from 'data/siteConfig';
+import { GalleryDetail } from 'pages';
 
 const InputWrapper = styled.div`
 	display: flex;
@@ -88,7 +84,7 @@ export default class Artworks extends Component {
 
 	handleChange = name => e => {
 		const { type, value } = e.target;
-		const val =			type === 'number' || name === 'category' ? parseFloat(value) : value;
+		const val = type === 'number' || name === 'category' ? parseFloat(value) : value;
 		this.setState({ [name]: val });
 	};
 
@@ -96,9 +92,7 @@ export default class Artworks extends Component {
 	handleReturnPress = event => {
 		const { data, title } = this.state;
 		if (event.keyCode === 13) {
-			const results =				typeof title === 'string' && !isEmpty(title)
-					? this.getResultsByTitle()
-					: data;
+			const results = typeof title === 'string' && !isEmpty(title) ? this.getResultsByTitle() : data;
 
 			this.setState({
 				category: 0, // set to all artwork
@@ -148,9 +142,7 @@ export default class Artworks extends Component {
 		}
 
 		return data.filter(image => {
-			const imageTitle =				image && typeof image.title === 'string'
-					? image.title.toLowerCase()
-					: '';
+			const imageTitle = image && typeof image.title === 'string' ? image.title.toLowerCase() : '';
 			return imageTitle.includes(keywords);
 		});
 	};
@@ -162,9 +154,7 @@ export default class Artworks extends Component {
 	getImagePreviewSrc = image => (image && image.src ? constants.IMAGE_PATH_60 + image.src : '');
 
 	// test
-	__getImageSrc = image => (image && image.src
-			? `http://www.bezor.com.au/${constants.IMAGE_PATH_350}${image.src}`
-			: '');
+	__getImageSrc = image => (image && image.src ? `http://www.bezor.com.au/${constants.IMAGE_PATH_350}${image.src}` : '');
 
 	getYearLabel = image => {
 		let yearLabel = '';
@@ -179,12 +169,9 @@ export default class Artworks extends Component {
 		return yearLabel;
 	};
 
-getTitleLabel = image => (image && image.title ? image.title : '');
+	getTitleLabel = image => (image && image.title ? image.title : '');
 
-	isCategory = (image, category) => (image.categories
-			? image.categories.filter(categoryOption => categoryOption === category)
-					.length > 0
-			: false);
+	isCategory = (image, category) => (image.categories ? image.categories.filter(categoryOption => categoryOption === category).length > 0 : false);
 
 	setCategorySelectedResults() {
 		const { data, category } = this.state;
@@ -202,10 +189,8 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 				from = 2008;
 				return (
 					!this.isCategory(image, 'prints')
-					&& (image.dateCreated >= from
-						|| (image.dateUpdated && image.dateUpdated >= from))
-					&& (image.dateCreated <= to
-						|| (image.dateUpdated && image.dateUpdated <= to))
+					&& (image.dateCreated >= from || (image.dateUpdated && image.dateUpdated >= from))
+					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
 			// 1997 - 2007
@@ -214,10 +199,8 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 				to = 2007;
 				return (
 					!this.isCategory(image, 'prints')
-					&& (image.dateCreated >= from
-						|| (image.dateUpdated && image.dateUpdated >= from))
-					&& (image.dateCreated <= to
-						|| (image.dateUpdated && image.dateUpdated <= to))
+					&& (image.dateCreated >= from || (image.dateUpdated && image.dateUpdated >= from))
+					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
 			// 1987 - 2006
@@ -226,10 +209,8 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 				to = 2006;
 				return (
 					!this.isCategory(image, 'prints')
-					&& (image.dateCreated >= from
-						|| (image.dateUpdated && image.dateUpdated >= from))
-					&& (image.dateCreated <= to
-						|| (image.dateUpdated && image.dateUpdated <= to))
+					&& (image.dateCreated >= from || (image.dateUpdated && image.dateUpdated >= from))
+					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
 			// 1977 - 1986
@@ -238,10 +219,8 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 				to = 1986;
 				return (
 					!this.isCategory(image, 'prints')
-					&& (image.dateCreated >= from
-						|| (image.dateUpdated && image.dateUpdated >= from))
-					&& (image.dateCreated <= to
-						|| (image.dateUpdated && image.dateUpdated <= to))
+					&& (image.dateCreated >= from || (image.dateUpdated && image.dateUpdated >= from))
+					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
 			// Prints
@@ -264,7 +243,8 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 			{
 				category: categoryDefault,
 				title: '',
-				available: false
+				available: false,
+				image: null
 			},
 			() => this.setCategorySelectedResults()
 		);
@@ -307,34 +287,23 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 	};
 
 	getResetButton = () => (
-		<ResetButton
-			type="button"
-			className="btn btn-link"
-			onClick={this.handleReset}
-		>
+		<ResetButton type="button" className="btn btn-link" onClick={this.handleReset}>
 			reset
 		</ResetButton>
 	);
 
 	render() {
 		const {
- category, title, available, results
+ category, title, available, results, modalIsOpen, image
 } = this.state;
-
-		const displayedResults = available
-			? results.filter(image => image.sold !== true)
-			: results;
+		const displayedResults = available ? results.filter(image => image.sold !== true) : results;
 
 		return (
 			<Main heading={this.getHeadingText()}>
 				<div className="row">
 					<InputWrapper className="form-group col-6 col-sm-6 col-md-4 col-lg-3">
 						<label htmlFor="">Category</label>
-						<Select
-							options={categoryOptions}
-							onChange={this.handleCategoryChange('category')}
-							value={category}
-						/>
+						<Select options={categoryOptions} onChange={this.handleCategoryChange('category')} value={category} />
 					</InputWrapper>
 					<InputWrapper className="form-group col-12 col-sm-6 col-md-4 col-lg-3">
 						<label htmlFor="">Title / description</label>
@@ -347,16 +316,9 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 					</InputWrapper>
 					<CheckboxWrapper className="form-group col-12 col-sm-6 col-md-4 col-lg-3">
 						<div>
-							<Checkbox
-								onChange={this.handleAvailableChange('available')}
-								value={available}
-							/>
+							<Checkbox onChange={this.handleAvailableChange('available')} value={available} />
 							<label className="form-check-label">Available</label>
-							<ResetButton
-								type="button"
-								className="btn btn-link"
-								onClick={this.handleReset}
-							>
+							<ResetButton type="button" className="btn btn-link" onClick={this.handleReset}>
 								reset
 							</ResetButton>
 						</div>
@@ -365,14 +327,8 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 				<div className="row">
 					{!isEmpty(displayedResults) ? (
 						displayedResults.map((image, index) => (
-							<CardStyles
-								className="col-12 col-sm-6 col-md-4 col-lg-3"
-								key={image.src + image.medium}
-							>
-								<Link to={{
-										pathname: '/gallery',
-										state: image
-									}}>
+							<CardStyles className="col-12 col-sm-6 col-md-4 col-lg-3" key={image.src + image.medium}>
+								<div onClick={e => this.openImageModal(image, index, e)}>
 									<Card
 										preview={this.getImagePreviewSrc(image)}
 										src={this.getImageSrc(image)}
@@ -380,13 +336,14 @@ getTitleLabel = image => (image && image.title ? image.title : '');
 										year={this.getYearLabel(image)}
 										sold={image.sold}
 									/>
-								</Link>
+								</div>
 							</CardStyles>
 						))
 					) : (
 						<NoResultsFound>No images found</NoResultsFound>
 					)}
 				</div>
+				{modalIsOpen && <GalleryDetail image={image} onClose={this.closeImageModal} />}
 			</Main>
 		);
 	}

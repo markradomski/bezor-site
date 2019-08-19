@@ -69,11 +69,11 @@ class GalleryDetail extends Component {
 	};
 
 	onGoBack() {
-		this.props.history.goBack();
+		this.props.onClose();
 	}
 
 	render() {
-		const image = this.props.location.state;
+		const image = this.props.image;
 		const {
  title, dimensions, medium, sold
 } = image;
@@ -110,7 +110,8 @@ class GalleryDetail extends Component {
 }
 
 GalleryDetail.propTypes = {
-	image: PropTypes.oneOfType([PropTypes.string, PropTypes.object])
+	onClose: PropTypes.func.isRequired,
+	image: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired
 };
 
 export default GalleryDetail;
