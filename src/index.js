@@ -1,22 +1,20 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import {
-	Home,
-	About,
-	Artworks,
-	Contact,
-	Biography,
-	GalleryDetail
+ Home, About, Artworks, Contact, Biography, GalleryDetail
 } from 'pages';
 import { ScrollToTop, Header, Footer } from 'components';
 import config from 'data/siteConfig';
 import { GlobalStyle, PageContainer } from 'theme/GlobalStyle';
 
+const history = createBrowserHistory();
+
 class App extends Component {
 	render() {
 		return (
-			<Router>
+			<Router history={history}>
 				<ScrollToTop>
 					<GlobalStyle />
 					<PageContainer>

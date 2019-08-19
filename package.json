@@ -4,6 +4,7 @@
 	"private": true,
 	"person": "Mark Radomski <mrad@email.com>",
 	"dependencies": {
+		"history": "^4.9.0",
 		"prop-types": "^15.6.2",
 		"react": "^16.4.1",
 		"react-dom": "^16.4.1",
