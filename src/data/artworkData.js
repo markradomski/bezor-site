@@ -1952,7 +1952,7 @@ module.exports = {
 		},
 		{
 			src: 'women-friends-1977_lg.jpg',
-			title: 'Women and Friends',
+			title: 'Women friends',
 			dateCreated: 1977,
 			dateUpdated: null,
 			medium: 'Oil on Canvas',

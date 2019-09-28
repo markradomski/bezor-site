@@ -193,9 +193,9 @@ export default class Artworks extends Component {
 					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
-			// 1997 - 2007
+			// 1998 - 2007
 			if (category === 2) {
-				from = 1997;
+				from = 1998;
 				to = 2007;
 				return (
 					!this.isCategory(image, 'prints')
@@ -203,20 +203,20 @@ export default class Artworks extends Component {
 					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
-			// 1987 - 2006
+			// 1988 - 1997
 			if (category === 3) {
-				from = 1987;
-				to = 2006;
+				from = 1988;
+				to = 1997;
 				return (
 					!this.isCategory(image, 'prints')
 					&& (image.dateCreated >= from || (image.dateUpdated && image.dateUpdated >= from))
 					&& (image.dateCreated <= to || (image.dateUpdated && image.dateUpdated <= to))
 				);
 			}
-			// 1977 - 1986
+			// 1977 - 1987
 			if (category === 4) {
 				from = oldestDateCreated;
-				to = 1986;
+				to = 1987;
 				return (
 					!this.isCategory(image, 'prints')
 					&& (image.dateCreated >= from || (image.dateUpdated && image.dateUpdated >= from))

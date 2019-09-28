@@ -50,19 +50,12 @@ module.exports = {
 		{ value: 1, label: 'Recent Work' },
 		{ value: 2, label: '1998 - 2007' },
 		{ value: 3, label: '1988 - 1997' },
-		{ value: 4, label: '1977 - 1987' },
+		{ value: 4, label: '1976 - 1987' },
 		{ value: 5, label: 'Prints' }
 	],
 	categoryDefault: 1,
-	categories: [
-		'all artworks',
-		'paintings',
-		'prints',
-		'drawings',
-		'series',
-		'sculptures'
-	],
-	oldestDateCreated: 1977,
+	categories: ['all artworks', 'paintings', 'prints', 'drawings', 'series', 'sculptures'],
+	oldestDateCreated: 1976,
 	slideshow: [
 		'04.jpg',
 		'02.jpg',
