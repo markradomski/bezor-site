@@ -3,7 +3,7 @@ module.exports = {
 	contact: [
 		{ name: 'Facebook', link: 'https://www.facebook.com/annette.bezor' },
 		{ name: 'Instagram', link: 'https://www.instagram.com/annettebezor' },
-		{ name: 'Email', link: 'mailto:annette@bezor.com.au' }
+		{ name: 'Email', link: 'mailto:annette@bezor.com.au' },
 	],
 	galleries: [
 		{
@@ -11,39 +11,34 @@ module.exports = {
 			street: '113 Pirie Street',
 			suburb: 'Adelaide, South Australia',
 			info: '',
-			link: 'http://www.hillsmithgallery.com.au'
+			link: 'http://www.hillsmithgallery.com.au',
 		},
 		{
 			title: 'Australian Galleries',
 			street: '35 Derby Street',
 			suburb: 'Collingwood, Victoria',
 			info: '',
-			link: 'http://australiangalleries.com.au'
+			link: 'http://australiangalleries.com.au',
 		},
 		{
 			title: 'Aptos Cruz Galleries',
 			street: '147 Mt Barker Road',
 			suburb: 'Stirling, South Australia',
 			info: '* representing limited edition prints',
-			link: 'http://www.aptoscruz.com'
+			link: 'http://www.aptoscruz.com',
 		},
 		{
 			title: 'Berkeley Editions',
 			street: 'Francis Street',
 			suburb: 'East Sydney, New South Wales',
 			info: '* representing limited edition prints',
-			link: 'http://www.berkeleyeditions.com.au'
-		},
-		{
-			title: 'Contact',
-			name: 'Annette Bezor',
-			email: 'annette@bezor.com.au'
+			link: 'http://www.berkeleyeditions.com.au',
 		},
 		{
 			title: 'Site Design',
 			name: 'Mark Radomski',
-			email: 'mrad@email.com'
-		}
+			email: 'mrad@email.com',
+		},
 	],
 	categoryOptions: [
 		{ value: 0, label: 'All Artworks' },
@@ -51,7 +46,7 @@ module.exports = {
 		{ value: 2, label: '1998 - 2007' },
 		{ value: 3, label: '1988 - 1997' },
 		{ value: 4, label: '1976 - 1987' },
-		{ value: 5, label: 'Prints' }
+		{ value: 5, label: 'Prints' },
 	],
 	categoryDefault: 1,
 	categories: ['all artworks', 'paintings', 'prints', 'drawings', 'series', 'sculptures'],
@@ -67,7 +62,7 @@ module.exports = {
 		'09.jpg',
 		'10.jpg',
 		'11.jpg',
-		'12.jpg'
+		'12.jpg',
 	],
 	defaultArtworks: [
 		{
@@ -79,7 +74,7 @@ module.exports = {
 			dimensions: '220 x 200 cm',
 			sold: false,
 			text: null,
-			collection: null
+			collection: null,
 		},
 		{
 			src: 'billy-and-stoat_lg.jpg',
@@ -90,7 +85,7 @@ module.exports = {
 			dimensions: '97 x 97 cm',
 			sold: true,
 			text: null,
-			collection: null
+			collection: null,
 		},
 		{
 			src: 'mango-tang_1-2004_lg.jpg',
@@ -101,7 +96,7 @@ module.exports = {
 			dimensions: '165 x 165 cm',
 			sold: true,
 			text: null,
-			collection: null
+			collection: null,
 		},
 		{
 			src: 'guys-dolls_2-1995_lg.jpg',
@@ -112,7 +107,7 @@ module.exports = {
 			dimensions: '2 @ 200 x 80 cm',
 			sold: false,
 			text: null,
-			collection: null
-		}
-	]
+			collection: null,
+		},
+	],
 };

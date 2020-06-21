@@ -11,7 +11,8 @@ const Title = styled.h3``;
 const Biography = () => (
 	<Main heading="Biography">
 		<div className="cv">
-			<p>Born Adelaide, South Australia. Lives and works, Adelaide </p>
+			<p>Born Adelaide, South Australia, 5 April 1950 </p>
+			<p>Died Adelaide, South Australia, Jan 9 2020 </p>
 			<br />
 			<SectionHeading>
 				<Title>Education</Title>
