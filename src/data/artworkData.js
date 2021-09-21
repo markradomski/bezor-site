@@ -21,11 +21,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil/Acrylic/Gold leaf on canvas',
 			dimensions: '173 x 173 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'marjorie-and-me-2019_lg.jpg',
@@ -38,7 +38,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'miss-wong-and-me-2019_lg.jpg',
@@ -47,11 +47,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil on canvas',
 			dimensions: '173 x 173 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'the-fan-2019_lg.jpg',
@@ -64,7 +64,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'fleshpot-2017_lg.jpg',
@@ -77,7 +77,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'billy-and-stoat_lg.jpg',
@@ -90,7 +90,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'lemon-delicious_1-2015_lg.jpg',
@@ -103,7 +103,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'precious-luck-2015_lg.jpg',
@@ -116,7 +116,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'baby-blues-2015_lg.jpg',
@@ -125,11 +125,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil on canvas',
 			dimensions: '165 x 165 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'flawed-2016_lg.jpg',
@@ -138,11 +138,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Acrylic/Oil/Enamel on Linen',
 			dimensions: '140 x 140 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value-LL-2012_lg.jpg',
@@ -155,7 +155,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'golden-lindsay-2015_lg.jpg',
@@ -168,7 +168,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value-CL-2012_lg.jpg',
@@ -181,7 +181,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'golden-courtney-2015_lg.jpg',
@@ -194,7 +194,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value-AW-2012_lg.jpg',
@@ -207,7 +207,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'damaged-AW-2017_lg.jpg',
@@ -220,7 +220,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'golden-amy-2015_lg.jpg',
@@ -233,7 +233,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value-KM-2012_lg.jpg',
@@ -246,7 +246,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'lookers-2011_lg.jpg',
@@ -255,11 +255,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil on canvas',
 			dimensions: '165 x 165 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'like-snow-2011_lg.jpg',
@@ -272,7 +272,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'silent-violence-2011_lg.jpg',
@@ -285,7 +285,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value_1-2009_lg.jpg',
@@ -298,7 +298,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value_3-2010_lg.jpg',
@@ -311,7 +311,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value_4-2010_lg.jpg',
@@ -324,7 +324,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value_6-2011_lg.jpg',
@@ -337,7 +337,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'face-value_7-2011_lg.jpg',
@@ -350,7 +350,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'wrong-places-2010_lg.jpg',
@@ -363,7 +363,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'entanglement-complicity-2010_lg.jpg',
@@ -372,11 +372,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil on canvas',
 			dimensions: '180 x 280 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'silent-violent-2009_lg.jpg',
@@ -389,7 +389,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mocha-sunset-2009_lg.jpg',
@@ -402,7 +402,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'hazy-haze-2009_lg.jpg',
@@ -415,7 +415,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'Mirror-face-Camelia-2014-lg.jpg',
@@ -428,7 +428,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'second-nature-2009_lg.jpg',
@@ -441,7 +441,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mocha-java_1-2009_lg.jpg',
@@ -454,7 +454,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'turbanised-2018_lg.jpg',
@@ -467,7 +467,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'certain-blindness-2009_lg.jpg',
@@ -480,7 +480,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'ego-moons-2009_lg.jpg',
@@ -493,7 +493,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'shadowland-2009_lg.jpg',
@@ -506,7 +506,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'For-all-the-tea-in-China.jpg',
@@ -519,7 +519,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'Singapore-slang.jpg',
@@ -528,11 +528,11 @@ module.exports = {
 			dateUpdated: 2013,
 			medium: 'Oil/gold leaf on canvas',
 			dimensions: '165 x 165 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'Inscrutable.jpg',
@@ -545,7 +545,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'white-hush-2014_lg.jpg',
@@ -554,11 +554,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil/gold leaf on canvas',
 			dimensions: '165 x 165 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'quiet-violence-2014_lg.jpg',
@@ -571,7 +571,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'golden-kate-2015_lg.jpg',
@@ -584,7 +584,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		/* 		{
 			src: 'lifetimes-in-disguise-2015_lg.jpg',
@@ -610,7 +610,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'seduction-1998_lg.jpg',
@@ -623,7 +623,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'of-things-1998_lg.jpg',
@@ -636,7 +636,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'room-1999_lg.jpg',
@@ -649,7 +649,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'veneer_1_2-1999_lg.jpg',
@@ -662,7 +662,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'veneer_3_4-1999_lg.jpg',
@@ -675,7 +675,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'happy-ending-2000_lg.jpg',
@@ -688,7 +688,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'tete_4-tretchikoff-2000_lg.jpg',
@@ -701,7 +701,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'repetitions-tretchikoff-2001_lg.jpg',
@@ -714,7 +714,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'repetitions-delempicka-2001_lg.jpg',
@@ -727,7 +727,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'repetitions-rosetti-2001_lg.jpg',
@@ -740,7 +740,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'tension_1-2002_lg.jpg',
@@ -753,7 +753,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'tension_2-2002_lg.jpg',
@@ -766,7 +766,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'tension_3-Night-Hush-2002_lg.jpg',
@@ -779,7 +779,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'tension_12-1999_lg.jpg',
@@ -792,7 +792,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mocha-java_3-2004_lg.jpg',
@@ -805,7 +805,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mocha-java_4-2004_lg.jpg',
@@ -818,7 +818,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mango-tang_1-2004_lg.jpg',
@@ -831,7 +831,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 
 		{
@@ -845,7 +845,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mango-tang_4-2004_lg.jpg',
@@ -858,7 +858,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'cherry-float_1-2003_lg.jpg',
@@ -871,7 +871,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'random-phenomona-2004_lg.jpg',
@@ -884,7 +884,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mocha-havana-2004_lg.jpg',
@@ -897,7 +897,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'green-turban-2006_lg.jpg',
@@ -910,7 +910,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'yellow-turban-2005_lg.jpg',
@@ -923,7 +923,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'red-turban-2006_lg.jpg',
@@ -936,7 +936,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'still-posing_2-2006_lg.jpg',
@@ -949,7 +949,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'wisdom-2006_lg.jpg',
@@ -962,7 +962,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'from-babylon-2006_lg.jpg',
@@ -975,7 +975,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'blue-turban-2006_lg.jpg',
@@ -988,7 +988,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mirror-face-2006_lg.jpg',
@@ -1001,7 +1001,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'my-mirror-face-2006_lg.jpg',
@@ -1014,7 +1014,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'urban-turbans-2006_lg.jpg',
@@ -1027,7 +1027,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'taipei-tang_2-2007_lg.jpg',
@@ -1040,7 +1040,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'not-dark-yet-2007_lg.jpg',
@@ -1053,7 +1053,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'crossings-2007_lg.jpg',
@@ -1066,7 +1066,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'flower-fetish_1-2006_lg.jpg',
@@ -1079,7 +1079,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'flower-fetish_2-2006_lg.jpg',
@@ -1092,7 +1092,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'balls-2005_lg.jpg',
@@ -1105,7 +1105,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'blush-2002_lg.jpg',
@@ -1118,7 +1118,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'ego-moon_2-2005_lg.jpg',
@@ -1131,7 +1131,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		/* 		{
 			src: 'tension_4-essential-mona-1999_lg.jpg',
@@ -1157,7 +1157,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'odelympia-1988_lg.jpg',
@@ -1170,7 +1170,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'decorum_1-1989_lg.jpg',
@@ -1183,7 +1183,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'decorum_2-1989_lg.jpg',
@@ -1196,7 +1196,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'decorum_3-1989_lg.jpg',
@@ -1209,7 +1209,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'decorum_5-1989_lg.jpg',
@@ -1222,7 +1222,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'framed-1992_lg.jpg',
@@ -1235,7 +1235,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'entanglement-libido-1989_lg.jpg',
@@ -1248,7 +1248,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'entanglement-inversion-1989_lg.jpg',
@@ -1261,7 +1261,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'entanglement-identity-1991_lg.jpg',
@@ -1274,7 +1274,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'question-of-unity-1989_lg.jpg',
@@ -1287,7 +1287,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'fishing-in-paris-1997_lg.jpg',
@@ -1300,7 +1300,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'camelia-complex-1997_lg.jpg',
@@ -1313,7 +1313,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'something-fishy-1990_lg.jpg',
@@ -1326,7 +1326,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'wish-you-were-here-1991_lg.jpg',
@@ -1339,7 +1339,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'lifetime-experience-1991_lg.jpg',
@@ -1352,7 +1352,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'reconstituer-blind-1995_lg.jpg',
@@ -1365,7 +1365,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'masaccio-1991_lg.jpg',
@@ -1378,7 +1378,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'petite-mort-faux-1990_lg.jpg',
@@ -1391,7 +1391,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'petite-mort-glad-1990_lg.jpg',
@@ -1404,7 +1404,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'no-1991_lg.jpg',
@@ -1417,7 +1417,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings', 'sculptures']
+			categories: ['paintings', 'sculptures'],
 		},
 		{
 			src: 'complicity_1-1995_lg.jpg',
@@ -1430,7 +1430,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'complicity_2-1995_lg.jpg',
@@ -1443,7 +1443,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'complicity_3-1995_lg.jpg',
@@ -1456,7 +1456,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'complicity_4-1995_lg.jpg',
@@ -1469,7 +1469,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'insatiate-desires_1-1995_lg.jpg',
@@ -1482,7 +1482,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'insatiate-desires_2-1995_lg.jpg',
@@ -1495,7 +1495,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'intercourse_1-1990_lg.jpg',
@@ -1508,7 +1508,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'intercourse_2-1990_lg.jpg',
@@ -1521,7 +1521,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'gabriella-monotype-1990_lg.jpg',
@@ -1534,7 +1534,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'fading-into-the-light-1992_lg.jpg',
@@ -1547,7 +1547,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'untitled-1992_lg.jpg',
@@ -1560,7 +1560,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'large-head-in-clouds-1996_lg.jpg',
@@ -1573,7 +1573,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'struck-dumb_1_3-1993_lg.jpg',
@@ -1586,7 +1586,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'letting-hands-go-1993_lg.jpg',
@@ -1599,7 +1599,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'eva-ave-marie-aria-1991_lg.jpg',
@@ -1612,7 +1612,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'eva-ave-marie-1991_lg.jpg',
@@ -1625,7 +1625,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'silent-witness-1992_lg.jpg',
@@ -1638,7 +1638,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'Embodiment_1-1989_lg.jpg',
@@ -1651,7 +1651,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'embodiment_2-1989_lg.jpg',
@@ -1664,7 +1664,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'halo-hole-1989_lg.jpg',
@@ -1677,7 +1677,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'untitled-1995.jpg',
@@ -1690,7 +1690,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'Marie-marilyn-1990_lg.jpg',
@@ -1703,7 +1703,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mary-mary-1991_lg.jpg',
@@ -1716,7 +1716,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'marilyn-1991_lg.jpg',
@@ -1729,7 +1729,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'maria-1991_lg.jpg',
@@ -1742,7 +1742,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'madonna-1991_lg.jpg',
@@ -1755,7 +1755,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'mary-1991_lg.jpg',
@@ -1768,7 +1768,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'marie-1991_lg.jpg',
@@ -1781,7 +1781,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'untitled-1991_lg.jpg',
@@ -1794,7 +1794,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'repetative-madonna-1990_lg.jpg',
@@ -1807,7 +1807,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'flesh-1990_lg.jpg',
@@ -1820,7 +1820,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'bound-1996_lg.jpg',
@@ -1833,7 +1833,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'peche-a-paris-1992_lg.jpg',
@@ -1846,7 +1846,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'cut-1992_lg.jpg',
@@ -1859,7 +1859,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'resemblance-blind-1996_lg.jpg',
@@ -1872,7 +1872,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'cat_3-1995_lg.jpg',
@@ -1881,11 +1881,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Acrylic mirror on wood',
 			dimensions: '100 x 100 x 10 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['sculptures']
+			categories: ['sculptures'],
 		},
 		{
 			src: 'brown-boy-1994_lg.jpg',
@@ -1898,7 +1898,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'pink-boy-1994_lg.jpg',
@@ -1911,7 +1911,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'red-boy-1994_lg.jpg',
@@ -1924,7 +1924,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'blue-boy-1994_lg.jpg',
@@ -1937,7 +1937,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'guys-dolls_1-1995_lg.jpg',
@@ -1950,7 +1950,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'guys-dolls_2-1995_lg.jpg',
@@ -1963,7 +1963,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'useless-dress-1996_lg.jpg',
@@ -1976,7 +1976,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'evasion-blind_1-1995_lg.jpg',
@@ -1989,7 +1989,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'evasion-blind_2-1995_lg.jpg',
@@ -2002,7 +2002,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'histoire-blind-1996_lg.jpg',
@@ -2015,7 +2015,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'builder-of-bridges-1997_lg.jpg',
@@ -2028,7 +2028,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'dusk-and-duct-1998_lg.jpg',
@@ -2041,7 +2041,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'not-needing-but-wanting_lg.jpg',
@@ -2054,7 +2054,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'jackie-jude_1-1976_lg.jpg',
@@ -2067,7 +2067,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'jackie-and-jude_2-1976_lg.jpg',
@@ -2080,7 +2080,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'women-friends-1977_lg.jpg',
@@ -2093,7 +2093,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'snake-is-dead-1981_lg.jpg',
@@ -2106,7 +2106,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'paradise-confined-1984_lg.jpg',
@@ -2119,7 +2119,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'high-and-dry-1983_lg.jpg',
@@ -2132,7 +2132,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'bedroom-piece_1-1984_lg.jpg',
@@ -2145,7 +2145,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'bedroom-piece_2-1984_lg.jpg',
@@ -2158,7 +2158,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'the-green-stairs-1987_lg.jpg',
@@ -2167,11 +2167,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Oil on linen',
 			dimensions: '90x 100 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'heads-above-water_1-pastel-1986_lg.jpg',
@@ -2184,7 +2184,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'heads-above-water_1-1986_lg.jpg',
@@ -2197,7 +2197,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'heads-above-water_2-1986_lg.jpg',
@@ -2210,7 +2210,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'heads-above-water_3-1986_lg.jpg',
@@ -2223,7 +2223,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'heads-above-water_4-1986_lg.jpg',
@@ -2236,7 +2236,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'wrestling-cherubim-1986_lg.jpg',
@@ -2249,7 +2249,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'oh-boa-1987_lg.jpg',
@@ -2262,7 +2262,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'gabriella-1987_lg.jpg',
@@ -2275,7 +2275,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['paintings']
+			categories: ['paintings'],
 		},
 		{
 			src: 'Hush-2009_lg.jpg',
@@ -2284,11 +2284,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '60 x 60 cm / 80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'FrenchLesson-2007_lg.jpg',
@@ -2297,11 +2297,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Dreamscheme-2007_lg.jpg',
@@ -2310,11 +2310,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'BlindTension-2007_lg.jpg',
@@ -2323,11 +2323,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'shadowland-2009_lg.jpg',
@@ -2336,11 +2336,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '60 x 60 cm / 80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'second-nature-2009_lg.jpg',
@@ -2349,11 +2349,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'yellow-turban-2005_lg.jpg',
@@ -2362,11 +2362,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'mocha-java_1-2009_lg.jpg',
@@ -2375,11 +2375,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Secrecy_lg.jpg',
@@ -2392,7 +2392,7 @@ module.exports = {
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Scandalous_lg.jpg',
@@ -2401,11 +2401,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Whisper_lg.jpg',
@@ -2414,11 +2414,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Unity_lg.jpg',
@@ -2427,11 +2427,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Like-snow.jpg',
@@ -2440,11 +2440,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Lookers_lg.jpg',
@@ -2453,11 +2453,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
+			categories: ['prints'],
 		},
 		{
 			src: 'Lookers-2_lg.jpg',
@@ -2466,11 +2466,11 @@ module.exports = {
 			dateUpdated: null,
 			medium: 'Digital print (Editions of 50)',
 			dimensions: '80 x 80 cm',
-			sold: false,
+			sold: true,
 			text: null,
 			collection: null,
 			keywords: [],
-			categories: ['prints']
-		}
-	]
+			categories: ['prints'],
+		},
+	],
 };
